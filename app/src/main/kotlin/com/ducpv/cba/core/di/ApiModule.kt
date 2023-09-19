@@ -1,7 +1,7 @@
 package com.ducpv.cba.core.di
 
 import com.ducpv.cba.BuildConfig
-import com.ducpv.cba.core.data.network.retrofit.NetworkApi
+import com.ducpv.cba.core.data.network.retrofit.WeatherApi
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
 import dagger.Module
 import dagger.Provides
@@ -65,16 +65,16 @@ object ApiModule {
 
     @Provides
     @Singleton
-    fun provideNetworkApi(
+    fun provideWeatherApi(
         okHttpClient: OkHttpClient,
         jsonConverterFactory: Converter.Factory,
-    ): NetworkApi {
+    ): WeatherApi {
         return Retrofit.Builder()
             .baseUrl(BuildConfig.API_URL)
             .client(okHttpClient)
             .addConverterFactory(jsonConverterFactory)
             .build()
-            .create(NetworkApi::class.java)
+            .create(WeatherApi::class.java)
     }
 }
 

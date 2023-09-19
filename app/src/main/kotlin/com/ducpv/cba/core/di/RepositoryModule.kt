@@ -1,8 +1,8 @@
 package com.ducpv.cba.core.di
 
-import com.ducpv.cba.core.data.network.NetworkDataSource
-import com.ducpv.cba.core.domain.repository.AuthRepository
-import com.ducpv.cba.core.domain.repository.AuthRepositoryImpl
+import com.ducpv.cba.core.data.network.WeatherDataSource
+import com.ducpv.cba.core.domain.repository.WeatherRepository
+import com.ducpv.cba.core.domain.repository.WeatherRepositoryImpl
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -18,7 +18,7 @@ object RepositoryModule {
 
     @Provides
     @Singleton
-    fun provideAuthRepository(dataSource: NetworkDataSource): AuthRepository {
-        return AuthRepositoryImpl(dataSource)
+    fun provideWeatherRepository(dataSource: WeatherDataSource): WeatherRepository {
+        return WeatherRepositoryImpl(dataSource)
     }
 }

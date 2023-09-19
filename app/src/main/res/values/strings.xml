@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">ComposeBaseApp</string>
+    <string name="app_name">Weather</string>
+    <string name="air_quality">Air quality</string>
+    <string name="temperature">Temperature</string>
+    <string name="ozone">Ozone</string>
+    <string name="uv">UV</string>
+    <string name="rain">Rain</string>
+    <string name="s02">S02</string>
+    <string name="wind">Wind</string>
+    <string name="city_air_quality_ranking">City air quality ranking</string>
+    <string name="aqi">AQI</string>
 </resources>

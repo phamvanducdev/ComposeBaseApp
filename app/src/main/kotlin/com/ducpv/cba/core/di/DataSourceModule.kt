@@ -7,9 +7,9 @@ import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
 import com.ducpv.cba.core.data.datastore.PrefsDataSource
 import com.ducpv.cba.core.data.datastore.PrefsDataSourceImpl
-import com.ducpv.cba.core.data.network.NetworkDataSource
-import com.ducpv.cba.core.data.network.NetworkDataSourceImpl
-import com.ducpv.cba.core.data.network.retrofit.NetworkApi
+import com.ducpv.cba.core.data.network.WeatherDataSource
+import com.ducpv.cba.core.data.network.WeatherDataSourceImpl
+import com.ducpv.cba.core.data.network.retrofit.WeatherApi
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -27,6 +27,7 @@ object DataSourceModule {
         return application.dataStore
     }
 
+
     @Provides
     @Singleton
     fun providePrefsDataSourceImpl(dataStore: DataStore<Preferences>): PrefsDataSource {
@@ -35,7 +36,7 @@ object DataSourceModule {
 
     @Provides
     @Singleton
-    fun provideNetworkDataSource(api: NetworkApi): NetworkDataSource {
-        return NetworkDataSourceImpl(api)
+    fun provideWeatherDataSource(api: WeatherApi): WeatherDataSource {
+        return WeatherDataSourceImpl(api)
     }
 }
