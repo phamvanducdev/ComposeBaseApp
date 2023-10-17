@@ -9,19 +9,22 @@ import androidx.compose.ui.text.style.LineHeightStyle
 import androidx.compose.ui.unit.sp
 import com.ducpv.cba.R
 
-val AppFont = FontFamily(
-    Font(R.font.roboto_black, FontWeight.Black),
-    Font(R.font.roboto_bold, FontWeight.Bold),
-    Font(R.font.roboto_light, FontWeight.Light),
-    Font(R.font.roboto_medium, FontWeight.Medium),
-    Font(R.font.roboto_regular, FontWeight.Normal),
-    Font(R.font.roboto_thin, FontWeight.Thin),
+val InterFont = FontFamily(
+    Font(R.font.inter_black, FontWeight.Black),
+    Font(R.font.inter_bold, FontWeight.Bold),
+    Font(R.font.inter_extra_bold, FontWeight.ExtraBold),
+    Font(R.font.inter_light, FontWeight.Light),
+    Font(R.font.inter_extra_light, FontWeight.ExtraLight),
+    Font(R.font.inter_medium, FontWeight.Medium),
+    Font(R.font.inter_regular, FontWeight.Normal),
+    Font(R.font.inter_semi_bold, FontWeight.SemiBold),
+    Font(R.font.inter_thin, FontWeight.Thin),
 )
 
 // Set of Material typography styles to start with
 val AppTypography = Typography(
     displayLarge = TextStyle(
-        fontFamily = AppFont,
+        fontFamily = InterFont,
         fontWeight = FontWeight.Black,
         fontSize = 57.sp,
         lineHeight = 64.sp,
@@ -32,7 +35,7 @@ val AppTypography = Typography(
         ),
     ),
     displayMedium = TextStyle(
-        fontFamily = AppFont,
+        fontFamily = InterFont,
         fontWeight = FontWeight.Black,
         fontSize = 45.sp,
         lineHeight = 52.sp,
@@ -43,7 +46,7 @@ val AppTypography = Typography(
         ),
     ),
     displaySmall = TextStyle(
-        fontFamily = AppFont,
+        fontFamily = InterFont,
         fontWeight = FontWeight.Black,
         fontSize = 36.sp,
         lineHeight = 44.sp,
@@ -54,7 +57,7 @@ val AppTypography = Typography(
         ),
     ),
     headlineLarge = TextStyle(
-        fontFamily = AppFont,
+        fontFamily = InterFont,
         fontWeight = FontWeight.ExtraBold,
         fontSize = 32.sp,
         lineHeight = 40.sp,
@@ -65,7 +68,7 @@ val AppTypography = Typography(
         ),
     ),
     headlineMedium = TextStyle(
-        fontFamily = AppFont,
+        fontFamily = InterFont,
         fontWeight = FontWeight.ExtraBold,
         fontSize = 28.sp,
         lineHeight = 36.sp,
@@ -76,7 +79,7 @@ val AppTypography = Typography(
         ),
     ),
     headlineSmall = TextStyle(
-        fontFamily = AppFont,
+        fontFamily = InterFont,
         fontWeight = FontWeight.ExtraBold,
         fontSize = 24.sp,
         lineHeight = 32.sp,
@@ -87,7 +90,7 @@ val AppTypography = Typography(
         ),
     ),
     titleLarge = TextStyle(
-        fontFamily = AppFont,
+        fontFamily = InterFont,
         fontWeight = FontWeight.Bold,
         fontSize = 22.sp,
         lineHeight = 28.sp,
@@ -98,7 +101,7 @@ val AppTypography = Typography(
         ),
     ),
     titleMedium = TextStyle(
-        fontFamily = AppFont,
+        fontFamily = InterFont,
         fontWeight = FontWeight.Bold,
         fontSize = 16.sp,
         lineHeight = 24.sp,
@@ -109,7 +112,7 @@ val AppTypography = Typography(
         ),
     ),
     titleSmall = TextStyle(
-        fontFamily = AppFont,
+        fontFamily = InterFont,
         fontWeight = FontWeight.Bold,
         fontSize = 14.sp,
         lineHeight = 20.sp,
@@ -120,7 +123,7 @@ val AppTypography = Typography(
         ),
     ),
     labelLarge = TextStyle(
-        fontFamily = AppFont,
+        fontFamily = InterFont,
         fontWeight = FontWeight.Medium,
         fontSize = 14.sp,
         lineHeight = 20.sp,
@@ -131,7 +134,7 @@ val AppTypography = Typography(
         ),
     ),
     labelMedium = TextStyle(
-        fontFamily = AppFont,
+        fontFamily = InterFont,
         fontWeight = FontWeight.Medium,
         fontSize = 12.sp,
         lineHeight = 16.sp,
@@ -142,7 +145,7 @@ val AppTypography = Typography(
         ),
     ),
     labelSmall = TextStyle(
-        fontFamily = AppFont,
+        fontFamily = InterFont,
         fontWeight = FontWeight.Medium,
         fontSize = 10.sp,
         lineHeight = 16.sp,
@@ -153,7 +156,7 @@ val AppTypography = Typography(
         ),
     ),
     bodyLarge = TextStyle(
-        fontFamily = AppFont,
+        fontFamily = InterFont,
         fontWeight = FontWeight.Normal,
         fontSize = 16.sp,
         lineHeight = 24.sp,
@@ -164,7 +167,7 @@ val AppTypography = Typography(
         ),
     ),
     bodyMedium = TextStyle(
-        fontFamily = AppFont,
+        fontFamily = InterFont,
         fontWeight = FontWeight.Normal,
         fontSize = 14.sp,
         lineHeight = 20.sp,
@@ -175,7 +178,7 @@ val AppTypography = Typography(
         ),
     ),
     bodySmall = TextStyle(
-        fontFamily = AppFont,
+        fontFamily = InterFont,
         fontWeight = FontWeight.Normal,
         fontSize = 12.sp,
         lineHeight = 16.sp,

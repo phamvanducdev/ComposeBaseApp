@@ -28,8 +28,8 @@ android {
 
     buildTypes {
         debug {
-            buildConfigField("String", "API_URL", "\"http://example.com/\"")
-            buildConfigField("String", "API_KEY", "\"123qweasdzxc\"")
+            buildConfigField("String", "API_KEY", "\"1b871ba03dc04a40b46183155232309\"")
+            buildConfigField("String", "API_URL", "\"http://api.weatherapi.com/\"")
         }
         release {
             isMinifyEnabled = false
@@ -37,8 +37,8 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
-            buildConfigField("String", "API_URL", "\"http://example.com/\"")
-            buildConfigField("String", "API_KEY", "\"123qweasdzxc\"")
+            buildConfigField("String", "API_KEY", "\"1b871ba03dc04a40b46183155232309\"")
+            buildConfigField("String", "API_URL", "\"http://api.weatherapi.com/\"")
         }
     }
     compileOptions {
@@ -84,11 +84,8 @@ dependencies {
     debugImplementation(libs.androidx.compose.ui.test.manifest)
     debugImplementation(libs.androidx.compose.ui.tooling)
 
-    implementation(libs.androidx.appcompat)
-    implementation(libs.androidx.activity.ktx)
-    implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.datastore)
+
     implementation(libs.androidx.hilt.navigation.compose)
 
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
@@ -109,6 +106,7 @@ dependencies {
     implementation(libs.kotlin.stdlib)
     implementation(libs.kotlinx.coroutines.android)
     implementation(libs.kotlinx.serialization.json)
+
     implementation(libs.okhttp3)
     implementation(libs.okhttp.logging)
     implementation(libs.retrofit.core)
@@ -123,7 +121,6 @@ dependencies {
     androidTestImplementation(libs.androidx.test.espresso.core)
     androidTestImplementation(libs.androidx.test.rules)
     androidTestImplementation(libs.androidx.test.ext.junit)
-    androidTestImplementation(libs.kotlinx.coroutines.test)
     androidTestImplementation(libs.androidx.compose.ui.test)
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
     androidTestImplementation(libs.kotlinx.coroutines.test)

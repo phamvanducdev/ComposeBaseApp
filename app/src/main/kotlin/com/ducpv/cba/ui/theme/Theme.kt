@@ -75,10 +75,9 @@ val DarkColorScheme = darkColorScheme(
 )
 
 @Composable
-fun ComposeBaseAppTheme(
+fun WeatherAppTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
-    // Dynamic color is available on Android 12+
-    dynamicColor: Boolean = true,
+    dynamicColor: Boolean = false,
     content: @Composable () -> Unit
 ) {
     val colorScheme = when {
